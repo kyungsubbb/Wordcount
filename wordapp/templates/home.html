@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    {% extends 'base.html'%}
+    {% block contents %}
+    <a href="{%url 'detail'%}">detail</a>   <!--detail로 넘어가기-->
+
+    <form action="{%url 'result'%}">
+    <textarea name="fulltext" cols="40" rows="10">  </textarea> <!--텍스트상자--> 
+    <br>
+    <input type="submit" value="Count!">   
+    </form>
+    {% endblock %}
+</body>
+</html>
